@@ -13,7 +13,7 @@ class Main:
         pl=plotting.Plot
         o=config.Init
 
-        p.pos1()
+        p.pos1() # position calculation
 
 # initial acceleration calculations
 
@@ -40,10 +40,10 @@ class Main:
             k.a8=a.acceleration("Neptune")
             k.a9=a.acceleration("Pluto")
 
-            v.velo()
+            v.velo() # velocity calculations
 
-            p.pos3(step)
+            p.pos3(step) # position calculations
     
-        pl.plt()
+        pl.plt() # plotting
 
     

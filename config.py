@@ -2,8 +2,8 @@ class Init:
 
 #Initial Conditions
     import numpy as np
-    dt = 500000
-    num_steps=365
+    dt = 500000 # time change
+    num_steps=365 # no. cycles to run
     G = 6.67430e-11 # gravitational constant
 
     m1 = 1.989e30  # mass of the Sun

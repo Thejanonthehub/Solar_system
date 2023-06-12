@@ -11,38 +11,47 @@ class Plot:
         fig = plt.figure()
         ax = plt.axes(projection='3d')
 
+        # postions of the Earth in x,y, and z planes
         object2_x = o.positions2[:,0]
         object2_y = o.positions2[:,1]
         object2_z = o.positions2[:,2]
 
+        # postions of the Sun in x,y, and z planes
         object1_x = o.positions1[:,0]
         object1_y = o.positions1[:,1]
         object1_z = o.positions1[:,2]
 
+        # postions of the Venus in x,y, and z planes
         object3_x = o.positions3[:,0]
         object3_y = o.positions3[:,1]
         object3_z = o.positions3[:,2]
 
+        # postions of the Mars  in x,y, and z planes
         object4_x = o.positions4[:,0]
         object4_y = o.positions4[:,1]
         object4_z = o.positions4[:,2]
 
+        # postions of the Jupiter in x,y, and z planes
         object5_x = o.positions5[:,0]
         object5_y = o.positions5[:,1]
         object5_z = o.positions5[:,2]
 
+        # postions of the Saturn in x,y, and z planes
         object6_x = o.positions6[:,0]
         object6_y = o.positions6[:,1]
         object6_z = o.positions6[:,2]
 
+        # postions of the Uranus in x,y, and z planes
         object7_x = o.positions7[:,0]
         object7_y = o.positions7[:,1]
         object7_z = o.positions7[:,2]
 
+        # postions of the Neptune in x,y, and z planes
         object8_x = o.positions8[:,0]
         object8_y = o.positions8[:,1]
         object8_z = o.positions8[:,2]
 
+        # postions of the Pluto in x,y, and z planes
         object9_x = o.positions9[:,0]
         object9_y = o.positions9[:,1]
         object9_z = o.positions9[:,2]
@@ -65,11 +74,6 @@ class Plot:
         object8_line, = ax.plot([], [], 'k.-', label='Neptune', color='indigo',linewidth=0.5, markersize=12, markevery=[-1],markeredgecolor='yellow', markerfacecolor='yellow')
         object9_line, = ax.plot([], [], 'k.-', label='Pluto', color='indigo',linewidth=0.5, markersize=10, markevery=[-1],markeredgecolor='red', markerfacecolor='red')
 
-
-# Set axis limits
-#ax.auto_scale_xyz(object1_x,object1_y,object1_z)
-#ax.auto_scale_xyz(object2_x,object2_y,object2_z)
-#ax.auto_scale_xyz(object3_x,object3_y,object3_z)
         ax.set_xlim3d([-2e11,50e11])
         ax.set_ylim3d([-2e11,50e11])
         ax.set_zlim3d([-2e11,2e4])
