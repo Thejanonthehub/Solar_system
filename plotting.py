@@ -116,7 +116,7 @@ class Plot:
         ax.set_xlabel('X-axis')
         ax.set_ylabel('Y-axis')
         ax.set_zlabel('Z-axis')
-        ax.set_title('Two Objects Animation')
+        ax.set_title('Many body simulation - Solar system')
         ax.legend()
         fig_manager = plt.get_current_fig_manager()
         fig_manager.full_screen_toggle()
